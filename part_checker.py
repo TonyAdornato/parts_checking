@@ -1,19 +1,12 @@
 """
-This is the file where the 2 parts come together
-it takes the Durr part number and enters it in stores
+This program takes the Durr part number and enters it in the stores web page
 if stores returns a value it will paste that into the column to the right
 It will then save the file under a new name
 
-
-This program has a hard coded path for the directory
 This program has a hard coded path for the directory
 
-The program looks for the parts in column G
 Ford parts all have the form K19-#######
-
-Add more description of the program and how it works
 """
-
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -89,6 +82,8 @@ def look_for_parts(wb, browser):
 
 # Main program
 if __name__ == "__main__":
-    wb, browser = program_start()
-    look_for_parts(wb, browser)
-    wb.save('output.xlsx')
+    try:
+        wb, browser = program_start()
+        look_for_parts(wb, browser)
+    finally:
+        wb.save('output.xlsx')
