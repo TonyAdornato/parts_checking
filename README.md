@@ -1,5 +1,5 @@
 # parts_checking
-Short program that looks correlates Durr spare part numbers to Ford's part numbers
+Short program that correlates Durr spare part numbers to Ford's part numbers
 
 Background:
 In the paint shop we installed new sealer robots from Durr. During the installation they gave us a list of all of the spare parts with descriptions and part numbers. We had some similar robots already installed in the shop, but these were a new revision with some new parts and some that carried over between generations. So we knew that there were going to be a lot of parts that had already been entered into the internal Ford parts system. 
